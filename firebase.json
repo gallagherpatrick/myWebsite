@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "D:/BigFolderBoi/MyWebsite/myWebsite",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
