@@ -1,82 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(243, 243, 243);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15rem);
 }
 
 .header {
     display: flex;
-    background-color: aqua;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    margin-top: -3rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
 }
 
-.navigation {
-    margin: 2rem;
-    margin-right: 4rem;
-    margin-left: auto;
-    justify-content: flex-end;
+h1 {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.navbar-button {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    font-size: medium;
-    margin-left: 2rem;
-}
-
-.container-image {
-    display: flex;
-}
-
-.image {
-    margin-left: auto;
-    margin-right: auto;
-    height: 35rem;
-    width: 70rem;
-    object-fit: cover;
-    object-position: 20% 0;
-}
-
-.row {
-    display: -webkit-flex;
-    display: flex;
-}
-
-.column {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: .8rem;
-}
-
-.footer {
-    padding: .8rem;
-}
-
-.Hamburger-Menu {
+svg {
     display: none;
 }
 
-@media (max-width: 768px) {
+.navButtons {
+    margin-right: 2rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    pad: 3rem;
+    display: flex;
+}
+
+p {
+    margin-left: 1rem;
+    margin-top: .1rem;
+    text-align: left;
+}
+
+h3 {
+    text-align: justify;
+}
+
+.aboutMe {
+    margin-top: 8rem;
+}
+
+h2 {
+    text-align: left;
+    margin: 0rem 0rem .3rem 1rem;
+}
+
+.aboutMeBody {
+    margin: .3rem 2rem 0rem 2rem;
+    text-align: justify;
+}
+
+.border {
+    margin: .1rem 4rem .3rem 1rem;
+    border-bottom: solid .05rem rgba(255, 255, 255, 0.3);
+}
+
+.link-logos {
+    margin: auto 0rem;
+}
+
+nav {
+    grid-column: 1/2;
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 10vh;
+    align-items: center;
+}
+
+.navigation {
+    text-align: end;
+}
+
+section {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    height: 60%;
+    width: 100%;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.headline {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-size: 4rem;
+    transform: translate(-20%, -70%);
+    color: #ffffff;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.navbar-button {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 43rem 43rem;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: .8rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.contactMeButton {
+    padding: .25rem;
+    border-radius: .3rem;
+    border: none;
+    box-shadow: .1rem .1rem rgba(0, 0, 0, 0.352);
+}
+
+#itch {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+#smallTextarea {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .grid-container {
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+
     .navigation {
-        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
     }
 
-    .Hamburger-Menu {
+    svg {
         display: block;
-        height: 2.8rem;
-        margin-top: 1rem;
-        margin-left: auto;
-        justify-content: flex-end;
     }
 
-    .logo {
+    .svg-icon {
+        position: absolute;
+        margin: 0 1rem 0 2.5rem;
+    }
+
+    #nav {
+        display: none;
+        margin-right: 2rem;
+    }
+
+    .navButtons {
+        margin-top: 2.5rem;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    a {
+        justify-content: right;
+        margin: .7rem 0 0 0;
+        margin-left: -1rem;
+    }
+
+    #itch {
+        margin-top: 10rem;
+        z-index: -1;
+    }
+
+    iframe {
+        width: auto;
+        height: 83;
+    }
+
+    form {
+        margin-top: 5rem;
+    }
+
+    #largeTextarea {
         display: none;
     }
 
-    h1 {
-        font-size: medium;
+    #smallTextarea {
+        display: block;
     }
 }
