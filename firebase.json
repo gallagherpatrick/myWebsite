@@ -1,10 +1,13 @@
 {
   "hosting": {
-    "public": "D:/BigFolderBoi/MyWebsite/myWebsite",
+    "public": "\\myWebsite",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  "run": {
+    "region": "us-east1"
   }
 }
