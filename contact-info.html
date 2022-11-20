@@ -7,6 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Info</title>
     <link rel="stylesheet" href="style.css">
+
+    <script defer type="module">
+        // Import the functions you need from the SDKs you need
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAt2J2TIITuSLixVLmeNVfl24cTQkO7M4E",
+            authDomain: "patrickgallagherwebsite.firebaseapp.com",
+            projectId: "patrickgallagherwebsite",
+            storageBucket: "patrickgallagherwebsite.appspot.com",
+            messagingSenderId: "613340694086",
+            appId: "1:613340694086:web:178d92ff8ac8f8ebe66c47",
+            measurementId: "G-K6D7T7N18B"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <script defer src=" script.js" type="module">
+    </script>
 </head>
 
 <body style="background-image: url(images/Mass.jpg);">
@@ -55,32 +81,6 @@
     </form>
 
     <section style="display: inline-flexbox; height: 53vh; max-height:fit-content;"></section>
-
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyAt2J2TIITuSLixVLmeNVfl24cTQkO7M4E",
-            authDomain: "patrickgallagherwebsite.firebaseapp.com",
-            projectId: "patrickgallagherwebsite",
-            storageBucket: "patrickgallagherwebsite.appspot.com",
-            messagingSenderId: "613340694086",
-            appId: "1:613340694086:web:178d92ff8ac8f8ebe66c47",
-            measurementId: "G-K6D7T7N18B"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-    <script src=" script.js">
-    </script>
 </body>
 
 </html>

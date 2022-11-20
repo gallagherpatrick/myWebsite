@@ -1,4 +1,10 @@
+if (module.hot) {
+    module.hot.accept();
+}
+
+
 let menuOpen = false;
+
 
 let hamburger = document.querySelector('.svg-icon');
 
@@ -14,6 +20,7 @@ const openMenu = function () {
 
 hamburger.addEventListener('click', openMenu);
 
+
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyAt2J2TIITuSLixVLmeNVfl24cTQkO7M4E",
@@ -24,3 +31,4 @@ const firebaseConfig = {
     appId: "1:613340694086:web:178d92ff8ac8f8ebe66c47",
     measurementId: "G-K6D7T7N18B"
 };
+

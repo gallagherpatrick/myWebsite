@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "\\myWebsite",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,5 +9,15 @@
   },
   "run": {
     "region": "us-east1"
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5050
+    },
+    "ui": {
+      "enabled": true,
+      "port": 5051
+    },
+    "singleProjectMode": true
   }
 }
