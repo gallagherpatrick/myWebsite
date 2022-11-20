@@ -1,0 +1,28 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Patrick's Website",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gallagherpatrick/myWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gallagherpatrick/myWebsite/issues"
+  },
+  "homepage": "https://github.com/gallagherpatrick/myWebsite#readme",
+  "dependencies": {
+    "firebase-admin": "^11.3.0",
+    "leaflet": "^1.9.3",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  }
+}
